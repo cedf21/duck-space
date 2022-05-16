@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador oi</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class='main'>
+        <div class="container" style="">
+            <div class="imagem">
+                <img src="img/patolino.png"/>
+            </div>
+
+            <div class="header">
+                <h1>Seja bem vindo ao Duck Space</h1>
+            </div>
+
+            <div>
+                <input type="submit" class="submit" id="sub" value='Entrar'/> 
+                <input type="submit" class="join" id="sub" value='Se cadastrar'/>
+            </div>
+
+        </div>
+
+        <div class="form-sign" style="display: none">
+            <form>
+                <h1>Cadastre-se</h1>
+               <div class="form-control">
+                    <input type="text" placeholder="Nome"/>
+               </div>
+               
+               <div class="form-control">
+                    <input type="text" placeholder="E-mail"//>
+               </div>
+
+               <div class="form-control">
+                    <input type="text" placeholder="Telefone"//>
+               </div>
+
+               <div class="form-control">
+                    <input type="text" placeholder="Senha"//>
+               </div>
+
+                 <div>
+                    <input type="submit" class="submit-sign"  value='Confirmar'/>
+                </div>
+               
+            </form>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("#sub").on("click", function(){
+
+        $( ".container" ).slideUp(  3000, function() {  });
+        setTimeout(()=>{
+            $( ".form-sign" ).slideDown(1000, function() {  });
+        },3500);
+    });
+</script>
+</body>
+</html>
